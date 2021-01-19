@@ -1,0 +1,316 @@
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+nav {
+    background-color: black;
+    height: 20vh;
+    width: 100%;
+    color: white;
+}
+
+.logo {
+    width: 25%;
+    height: auto;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.align-logo {
+    left: 3rem;
+}
+
+.title-nav {
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    color: turquoise;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 1s;
+}
+
+.title-nav:hover {
+    background-size: 80% 2px;
+}
+
+
+.navbar-dark .navbar-toggler {
+    border: 1px solid #40e0d0;
+    outline: none;
+}
+
+
+
+.container-fluid {
+    background-color: rgb(0, 217, 192);
+    width: 100%;
+    height: 80vh;
+}
+
+.box-title {
+    margin-top: 6rem;
+    text-align: left;
+    left: 4rem;
+}
+
+.title {
+    color: #000;
+    font-family: sans-serif;
+    font-size: 350%;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.title::first-line {
+    font-size: 50%;
+}
+
+.text-landing {
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(51, 51, 51);
+}
+
+/* .image-landing{
+    width: 100%;
+} */
+
+/* NAVEGADOR */
+.menu input[type="checkbox"],
+.menu .barras,
+.menu .veces {
+    position: absolute;
+    background-image: url("../img/menu.png");
+    margin-right: 1%;
+    margin-top: 3%;
+    right: 0;
+    top: 0;
+    width: 64px;
+    height: 64px;
+}
+
+.menu .barras,
+.menu .veces {
+    font-size: 48px;
+    pointer-events: none;
+}
+
+.menu input[type="checkbox"] {
+    opacity: 0;
+}
+
+.menu {
+    color: white;
+    position: relative;
+    background: black;
+    min-height: 20vh;
+}
+
+.menu nav {
+    display: none;
+    height: 280px;
+}
+
+.menu input:checked~nav {
+    display: block;
+}
+
+.align-logo input:checked~nav {
+    visibility: hidden;
+}
+
+.btns {
+    text-align: center;
+    color: white;
+    font-family: Sharpgroteskbook25, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btns:hover {
+    text-decoration: none;
+    color: red;
+    transition: 2s;
+}
+
+
+.bg-black {
+    background-color: black;
+}
+
+
+
+/* ABOUT ME */
+
+.table {
+    /* background-color: rgb(0, 0, 0); */
+    background-color: rgb(4, 56, 56);
+    width: 70%;
+    position: relative;
+    left: 15%;
+    right: 15%;
+    height: 100%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .25);
+    border-radius: 10px;
+}
+
+.table::-webkit-scrollbar {
+    width: 10px;
+    background: black;
+}
+
+.table::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+.img-cv {
+    max-width: 220px;
+    border-radius: 100px;
+    border: 3px solid white;
+}
+
+.title-form {
+    color: white;
+}
+
+.resp {
+    color: white;
+    font-size: large;
+    /* margin-top: 0.1rem; */
+}
+
+/* JOBS */
+.body-jobs {
+    overflow-y: scroll;
+}
+
+.container-jobs {
+    background-color: rgb(0, 217, 192);
+    width: 100%;
+}
+
+
+.img-jobs {
+    max-width: 713px;
+    max-height: 400px;
+    filter: brightness(0.5);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .25);
+    border-radius: 10px;
+}
+
+.img-jobs:hover {
+    filter: none;
+    transition: ease 1s;
+}
+
+/* EFECTO */
+.animado {
+    opacity: 0;
+    transition: all 3s;
+}
+
+.animadoIzq {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.animadoIzqDos {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.mostrarIzq {
+    animation: mostrarIzq 3s;
+}
+
+@keyframes mostrarIzq {
+    0% {
+        transform: translateX(-300px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* -- */
+.animadoDer {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.mostrarDer {
+    animation: mostrarDer 3s;
+}
+
+@keyframes mostrarDer {
+    0% {
+        transform: translateX(300px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* studies */
+.body-studies {
+    overflow-y: scroll;
+}
+
+.body-studies::-webkit-scrollbar {
+    width: 10px;
+    background: black;
+}
+
+.body-studies::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+.container-fluid-studies {
+    background-color: rgb(0, 217, 192);
+    width: 100%;
+    height: 100%;
+}
+
+.box-study {
+    position: relative;
+    left: 10%;
+    right: 10%;
+    background-color: rgb(4, 56, 56);
+    width: 80%;
+    height: 150px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .25);
+    border-radius: 10px;
+    color: white;
+}
+
+.p-6 {
+    padding: 5rem;
+}
+
+/* contact */
+.box-contact {
+    background-color: rgb(4, 56, 56);
+    color: white;
+    width: 100%;
+    height: 30vh;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .25);
+    border-radius: 10px;
+}
+
+.box-contact:hover {
+    background-color: teal;
+    transition: ease 1s;
+    transform: translate3d(2px, -22px, -35px);
+}
