@@ -491,7 +491,7 @@ div#fotoLevis:hover div#infoLevis{
     color: white;
 }
 .img-mobile{
-    max-height: 70px;
+    height: 80px;
 }
 .title-mobile{
     font-size: 1.15rem;
