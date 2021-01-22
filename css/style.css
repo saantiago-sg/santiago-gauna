@@ -467,3 +467,8 @@ div#fotoLevis:hover div#infoLevis{
     display: flex;
     left: 1px;
 }
+/* JOBS MOBILE */
+
+.max-h-mob{
+    max-height: 241px;
+}
