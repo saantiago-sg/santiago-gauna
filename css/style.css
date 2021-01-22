@@ -488,10 +488,9 @@ div#fotoLevis:hover div#infoLevis{
     box-shadow: 4px 4px 4px rgba(0, 0, 0, .25);
     border-radius: 10px;
     color: white;
-    /* padding: 1rem; */
 }
 .img-mobile{
-    max-height: 50px;
+    max-height: 70px;
 }
 .title-mobile{
     font-size: 1.15rem;
