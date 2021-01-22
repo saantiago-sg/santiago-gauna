@@ -477,3 +477,22 @@ div#fotoLevis:hover div#infoLevis{
 .img-car-mob:hover{
     filter: none;
 }
+
+/* STUDIES MOBILE */
+.box-study-mobile{
+    position: relative;
+    left: 5%;
+    background-color: rgb(4, 56, 56);
+    width: 98%;
+    height: 250px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .25);
+    border-radius: 10px;
+    color: white;
+    /* padding: 1rem; */
+}
+.img-mobile{
+    max-height: 50px;
+}
+.title-mobile{
+    font-size: 1.15rem;
+}
