@@ -52,7 +52,7 @@ a:hover {
 .container-fluid {
     background-color: rgb(0, 217, 192);
     width: 100%;
-    height: 80vh;
+    height: 100vh;
 }
 
 .box-title {
@@ -339,6 +339,7 @@ div#fotoLevis:hover div#infoLevis{
 /* -------- STUDIES ------ */
 .body-studies {
     overflow-y: scroll;
+    background-color: rgb(0, 217, 192);
 }
 
 .body-studies::-webkit-scrollbar {
@@ -354,7 +355,7 @@ div#fotoLevis:hover div#infoLevis{
 .container-fluid-studies {
     background-color: rgb(0, 217, 192);
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .box-study {
