@@ -33,7 +33,7 @@ setTimeout(function(){
 
               for(let i = 0; i < animadoIzqDos.length; i++){  
               let alturaAnimadoIzq = animadoIzqDos[i].offsetTop;    //detecto altura hacia la card
-                if(alturaAnimadoIzq - 300 < scrollTop){
+                if(alturaAnimadoIzq - 370 < scrollTop){
                 animadoIzqDos[i].style.opacity = 1;
                 animadoIzqDos[i].classList.add("mostrarIzq");
                   }
