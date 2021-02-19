@@ -174,7 +174,7 @@ a:hover {
 .img-cv {
     max-width: 220px;
     border-radius: 100px;
-    border: 3px solid white;
+    border: 2px solid turquoise;
 }
 
 .title-form {
@@ -192,6 +192,15 @@ a:hover {
     overflow-y: scroll;
 }
 
+.body-jobs::-webkit-scrollbar {
+    width: 10px;
+    background: black;
+}
+
+.body-jobs::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
 .container-jobs {
     background-color: rgb(0, 217, 192);
     width: 100%;
@@ -449,18 +458,66 @@ div#fotoLevis:hover div#infoLevis{
 /* aboutme mobile */
 .table-mobile{
     background-color: rgb(4, 56, 56);
-    width: 80%;
+    width: 99%;
     position: relative;
-    left: 15%;
-    right: 10%;
+    left: 5%;
+    /* right: 5%; */
     height: 100%;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, .25);
     border-radius: 10px;
 }
 .img-cv-mob{
-    max-width: 190px;
-    border-radius: 100px;
-    border: 2px solid white;
+    /* max-width: 100px;
+    max-height: 100px;
+    border-radius: 100%;
+    border: 2px solid white; */
+    border-radius: 50%;
+    border: 2px solid turquoise;
+}
+.title-mob{
+    margin-top: .5rem;
+    font-family: Work Sans,sans-serif;
+    font-weight: 600;
+    color: #fbf9ef;
+    font-size: 20px;
+    /* transform: translateY(100px); */
+    /* animation: show_text_trans 1s ease .4s forwards; */
+    text-align: center;
+}
+.subtitle-mob{
+    display: block;
+    font-family: Ubuntu,sans-serif;
+    font-weight: 400;
+    color: #fbf9ef;
+    font-size: 18px;
+    /* transform: translateY(100px); */
+    /* animation: show_text_trans 1s ease .4s forwards; */
+    text-align: center;
+    margin: auto;
+    margin-top: .5rem;
+}
+.border-bu{
+    border-bottom: 3px solid turquoise;
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+.border-top-mob{
+    margin-top: 1rem;
+    border-top: 3px solid turquoise;
+    position: relative;
+    width: 70%;
+    left: 15%;
+}
+.text-mob{
+    margin-top: 1rem;
+    line-height: 27px;
+    color: #fbf9ef;
+    font-family: Ubuntu,sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .title-form-mob{
     color: white;
@@ -496,4 +553,27 @@ div#fotoLevis:hover div#infoLevis{
 }
 .title-mobile{
     font-size: 1.15rem;
+}
+.text-title{
+    color: white;
+    font-family: Work Sans,sans-serif;
+    font-weight: 600;
+    line-height: 50px;
+    font-size: 36px;
+}
+.text-subtitle{
+    /* line-height: 50px; */
+    display: block;
+    font-family: Ubuntu,sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 30px;
+}
+.c-cream{
+    color: gainsboro;
+    font-family: Ubuntu,sans-serif;
+    font-size: 18px;
+}
+.border-r{
+    border-right: 3px solid turquoise;
 }
