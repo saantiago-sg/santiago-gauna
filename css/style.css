@@ -329,6 +329,37 @@ div#fotoLlano:hover div#infoLlano{
 }
 
 /*  */
+div#fotoCasas{
+    width: 713px;
+    height: 400px;
+    filter: brightness(0.5);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .25);
+    border-radius: 10px;
+    background-image: url('../img/casas-en-tandil-2.png');
+    background-size: cover;
+    background-position-x: -28px;
+} 
+div#infoCasas{
+    width: 713px;
+    height: 400px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    visibility: hidden;
+}
+div#infoCasas h1{
+    display: flex;
+    position: relative;
+    top: 85%;
+    left: 23%;
+}
+div#fotoCasas:hover{
+    filter: none;
+    transition: ease 1s;
+}
+div#fotoCasas:hover div#infoCasas{
+    visibility: visible;
+}
+/*  */
 div#fotoEspen{
     width: 713px;
     height: 400px;
