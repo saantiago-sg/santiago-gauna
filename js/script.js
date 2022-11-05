@@ -1,8 +1,3 @@
-// let inpMenu = document.querySelector("#inpMenu").addEventListener("click", toggle);
-// function toggle(){
-//     let logo = document.querySelector("#logo").style.display = 'none';
-// }
-
 setTimeout(function(){
 
     let animado = document.querySelectorAll(".animado");    //todas las clases 
@@ -57,11 +52,4 @@ setTimeout(function(){
                   }   
               }
           window.addEventListener("scroll", animarDer);
-        
-        
-    // let animadoDos = document.querySelectorAll(".animadoDos");    //todas las clases
-    //   for(let i = 0; i < animado.length; i++){    
-    //     animadoDos[i].style.opacity = 1;
-    //     animadoDos[i].classList.add("mostrarArriba");
-    //     }
     }, 0000);
