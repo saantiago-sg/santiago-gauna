@@ -530,10 +530,6 @@ div#fotoEspen:hover div#infoEspen{
 
 
 /* -------------- MOBILE ------------- */
-.logo-mob{
-    width: 100%;
-    height: auto;
-}
 .border-b{
     border-bottom: 0.5px solid white;
 }
@@ -587,11 +583,8 @@ div#fotoEspen:hover div#infoEspen{
 /* aboutme mobile */
 .table-mobile{
     background-color: rgb(4, 56, 56);
-    width: 99%;
-    position: relative;
-    left: 5%;
-    /* right: 5%; */
-    height: 100%;
+    width: 90%;
+    margin: 30px auto;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, .25);
     border-radius: 10px;
 }
@@ -710,4 +703,18 @@ div#fotoEspen:hover div#infoEspen{
 /* ---------- ABILITIES ------------- */
 .card{
 margin-bottom: 20px;
+}
+
+
+@media (min-width: 200px) and (max-width: 1140px) {
+    .logo-mob{
+        max-height: 100px;
+    }
+}
+
+
+@media (min-width: 1140px) and (max-width: 2000px) {
+    .container-fluid-studies {
+        width: 100%;
+    }
 }
