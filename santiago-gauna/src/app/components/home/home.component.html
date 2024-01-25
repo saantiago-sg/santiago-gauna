@@ -8,13 +8,47 @@
             <span class="subtitle">
                 ABOUT
             </span>
-            <h2>TITLE</h2>
-            <p class="max-w-prose text-base/relaxed text-neutrals-300">
-                I am Santiago, a passionate freelancer from Tandil, Argentina and the founder of IMAGINATION COMPANY, bringing you
+            <h1 class="animate__animated animate__bounceInRight">Frontend Developer</h1>
+            <p class="text">
+                I am Santiago, a passionate freelancer from Tandil, Argentina and the founder of IMAGINATION COMPANY,
+                bringing you
                 <span class="text-neutrals-100">web development and design from the future</span>. My
                 expertise is developing next-level websites and web applications including full frontend
                 design.
             </p>
         </div>
     </section>
+</div>
+<div class="work-container">
+    <span class="subtitle">
+        WORK
+    </span>
+    <h1 class="animate__animated animate__bounceInRight">Dig into my universe</h1>
+    <div class="row justify-content-center">
+        <div class="col-10">
+            <div class="card">
+                <p-carousel [value]="data" [numVisible]="3" [numScroll]="3" [circular]="true" [responsiveOptions]="responsiveOptions">
+                    <ng-template let-product pTemplate="item">
+                        <div class="item-card m-2 text-center py-5">
+                            <div class="mb-3">
+                                <img [src]="product.image" [alt]="product.name" class="w-6 shadow-2" />
+                            </div>
+                            <div>
+                                <h4 class="mb-1">{{ product.name }}</h4>
+                                <h6 class="mt-0 mb-3">{{ product.description }}</h6>
+                                <p-tag [value]="product.name"></p-tag>
+                                <div class="mt-5 flex align-items-center justify-content-center gap-2">
+                                <p-button icon="pi pi-search" [rounded]="true" />
+                                <p-button icon="pi pi-star-fill" [rounded]="true" severity="secondary" />
+                            </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </p-carousel>
+            </div>
+        
+        </div>
+
+    </div>
+
 </div>
