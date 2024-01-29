@@ -6,11 +6,12 @@ import { worksData } from '../../services/api.service';
 import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
+import { CardModule } from 'primeng/card';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrl: './home.component.less',
-  imports: [CommonModule, RouterModule, LandingComponent, CarouselModule, ButtonModule, TagModule],
+  imports: [CommonModule, RouterModule, LandingComponent, CarouselModule, ButtonModule, TagModule, CardModule],
   standalone: true
 })
 export class HomeComponent implements OnInit {

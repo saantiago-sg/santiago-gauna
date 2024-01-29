@@ -19,6 +19,7 @@
         </div>
     </section>
 </div>
+
 <div class="work-container">
     <span class="subtitle">
         WORK
@@ -26,29 +27,23 @@
     <h1 class="animate__animated animate__bounceInRight">Dig into my universe</h1>
     <div class="row justify-content-center">
         <div class="col-10">
-            <div class="card">
-                <p-carousel [value]="data" [numVisible]="3" [numScroll]="3" [circular]="true" [responsiveOptions]="responsiveOptions">
+            <div>
+                <p-carousel [value]="data" [numVisible]="3" [numScroll]="3" [circular]="true"
+                    [responsiveOptions]="responsiveOptions">
                     <ng-template let-product pTemplate="item">
-                        <div class="item-card m-2 text-center py-5">
-                            <div class="mb-3">
-                                <img [src]="product.image" [alt]="product.name" class="w-6 shadow-2" />
-                            </div>
-                            <div>
-                                <h4 class="mb-1">{{ product.name }}</h4>
-                                <h6 class="mt-0 mb-3">{{ product.description }}</h6>
-                                <p-tag [value]="product.name"></p-tag>
-                                <div class="mt-5 flex align-items-center justify-content-center gap-2">
-                                <p-button icon="pi pi-search" [rounded]="true" />
-                                <p-button icon="pi pi-star-fill" [rounded]="true" severity="secondary" />
-                            </div>
-                            </div>
+                        <div class="card card-page">
+                            <p-card [header]="product.name" [subheader]="product.description">
+                                <ng-template pTemplate="header">
+                                    <img alt="Card" [src]="product.image" [alt]="product.name" />
+                                </ng-template>
+                                <ng-template pTemplate="footer">
+                                    <p-button label="Save" icon="pi pi-search"></p-button>
+                                </ng-template>
+                            </p-card>
                         </div>
                     </ng-template>
                 </p-carousel>
             </div>
-        
         </div>
-
     </div>
-
 </div>

@@ -59,12 +59,49 @@ h1 {
 }
 .card{
     background-color: transparent;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    filter: opacity(0.8);
+    transition: ease .3s;
 
     img{
-        width: 200px;
+        width: 100%;
+        border-radius: 5px;
+        height: 400px;
+        object-fit: cover; 
     }
     .item-card{
         border: 1px solid rgb(46, 54, 79);
         border-radius: 5px;
     }
+}
+:host ::ng-deep .p-card-body{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    top: 20%;
+    transition: ease .3s;
+}
+:host ::ng-deep .card:hover .p-card-body {
+    display: block;
+    transition: ease .3s;
+}
+:host ::ng-deep .p-card-title{
+    color: white;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+}
+:host ::ng-deep .p-card-subtitle{
+    color: white;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+:host ::ng-deep .card:hover{
+    filter: opacity(0.5);
+    cursor: pointer;
+    transition: ease .5s;
 }
