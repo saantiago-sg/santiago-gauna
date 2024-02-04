@@ -44,6 +44,69 @@
                     </ng-template>
                 </p-carousel>
             </div>
+            <p-button label="Show more" icon="pi pi-search"></p-button>
         </div>
     </div>
+</div>
+<div class="skills-container">
+    <span class="subtitle">
+        SKILLS
+    </span>
+    <h1>That are my skills</h1>
+    <div class="skills-cards">
+        <div class="skill-card" *ngFor="let skill of skills">
+            <p-card [header]="skill.name" [style]="{ width: '360px', borderRadius: '10px' }">
+                <ng-template pTemplate="header">
+                    <div class="header-skill">
+                        <!-- <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" /> -->
+                        <div class="icon-header">
+                            <i [class]="skill.icon"></i>
+                        </div>
+                    </div>
+
+                </ng-template>
+                <p>
+                    {{skill.description}}
+                </p>
+            </p-card>
+        </div>
+    </div>
+</div>
+<div class="contact-me">
+    <div class="section-left">
+        <span class="subtitle">
+            CONTACT
+        </span>
+        <h1>You can send me a message</h1>
+        <p>Get your space suit ready and tell me your ideas to develop your dream website.</p>
+    </div>
+    <div class="section-right">
+        <form nz-form [formGroup]="validateForm" class="login-form">
+            <div class="input-form">
+                <label for="username">EMAIL</label>
+                <input pInputText id="username" placeholder="example@gmail.com" aria-describedby="username-help" formControlName="email" />
+                <!-- <small id="username-help">Enter your username to reset your password.</small> -->
+            </div>
+            <div class="input-form">
+                <label for="username">NAME</label>
+                <input pInputText id="username" placeholder="Example Name" aria-describedby="username-help" formControlName="name" />
+                <!-- <small id="username-help">Enter your username to reset your password.</small> -->
+            </div>
+            <div class="input-form">
+                <label for="username">MESSAGE</label>
+                <textarea rows="5" cols="30" placeholder="Example Message" pInputTextarea formControlName="textarea"></textarea>
+                <!-- <small id="username-help">Enter your username to reset your password.</small> -->
+            </div>
+            <div class="footer-form">
+                <div class="gmail-form">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>saantiagosg gmail.com</span>
+                </div>
+                <p-button label="Submit" icon="pi pi-send" iconPos="right" [loading]="loading"
+                (onClick)="submitForm(validateForm.valid, validateForm.value)"
+                ></p-button>
+            </div>
+        </form>
+    </div>
+
 </div>

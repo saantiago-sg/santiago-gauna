@@ -1,19 +1,5 @@
 // general
-h1 {
-    font-size: 48px;
-    margin: 1rem 0px;
-}
 
-.subtitle {
-    --tw-backdrop-blur: blur(4px);
-    --tw-text-opacity: 1;
-    color: rgb(105 25 255 / var(--tw-text-opacity));
-    border: 1px solid #6919ff4d;
-    background-color: #6919ff1a;
-    border-radius: 9999px;
-    border-width: 0.5px;
-    padding: 4px 16px;
-}
 
 //home
 .home-container {
@@ -55,9 +41,11 @@ h1 {
     color: white;
     --tw-border-opacity: 1;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 150px;
+    border-bottom: 1px solid #2e364f;
 }
-.card{
+
+.card {
     background-color: transparent;
     width: 90%;
     margin-left: auto;
@@ -65,18 +53,20 @@ h1 {
     filter: opacity(0.8);
     transition: ease .3s;
 
-    img{
+    img {
         width: 100%;
         border-radius: 5px;
         height: 400px;
-        object-fit: cover; 
+        object-fit: cover;
     }
-    .item-card{
+
+    .item-card {
         border: 1px solid rgb(46, 54, 79);
         border-radius: 5px;
     }
 }
-:host ::ng-deep .p-card-body{
+
+:host ::ng-deep .work-container .p-card-body {
     display: none;
     position: absolute;
     top: 0;
@@ -85,23 +75,115 @@ h1 {
     top: 20%;
     transition: ease .3s;
 }
-:host ::ng-deep .card:hover .p-card-body {
+
+:host ::ng-deep .work-container .card:hover .p-card-body {
     display: block;
     transition: ease .3s;
 }
-:host ::ng-deep .p-card-title{
+
+:host ::ng-deep .work-container .p-card-title {
     color: white;
     font-size: 2.25rem;
     line-height: 2.5rem;
     text-transform: uppercase;
 }
-:host ::ng-deep .p-card-subtitle{
+
+:host ::ng-deep .p-card-subtitle {
     color: white;
     font-size: .875rem;
     line-height: 1.25rem;
 }
-:host ::ng-deep .card:hover{
+
+:host ::ng-deep .card:hover {
     filter: opacity(0.5);
     cursor: pointer;
     transition: ease .5s;
+}
+
+// skills
+.skills-container {
+    // height: 100vh;
+    background: rgb(6, 9, 24);
+    color: white;
+    --tw-border-opacity: 1;
+    text-align: center;
+    border-bottom: 1px solid #2e364f;
+    padding: 100px 0px;
+}
+
+.skills-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../../assets/images/back3.jpg");
+    background-size: cover;
+    height: 200px;
+    border-radius: 5px 5px 0px 0px;
+    i{
+        font-size: 60px;
+        color: white;
+    }
+}
+:host ::ng-deep .skills-container .p-card-body{
+    background-color: #0f142d;
+    color: white;
+    border-radius: 0px 0px 5px 5px;
+}
+:host ::ng-deep .p-card-title{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+}
+// .icon-header{
+//     margin-top: -80px;
+//     i{
+//         font-size: 60px;
+//         margin-bottom: 20px;
+//     }
+// }
+
+.contact-me{
+    display: flex;
+    padding: 100px 50px;
+    // align-items: center;
+    height: 100vh;
+    gap: 5%;
+    // background: #060918;
+    color: white;
+    border-bottom: 1px solid #2e364f;
+}
+.section-right, .section-left{
+    width: 45%;
+}
+.input-form{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    label, input, textarea {
+        width: 100%;
+    }
+    textarea{
+        padding: 12px;
+        border-radius: 5px;
+    }
+}
+.footer-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .gmail-form{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 }

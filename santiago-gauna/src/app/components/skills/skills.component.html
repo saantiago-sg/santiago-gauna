@@ -1,0 +1,25 @@
+<div class="skills-container">
+    <div class="header-subtitle">
+        <span class="subtitle">
+            ABOUT
+        </span>
+    </div>
+    <div class="container-cards">
+        <div class="skill-card" *ngFor="let skill of skills">
+            <p-card [header]="skill.name" [style]="{ width: '360px', borderRadius: '10px' }">
+                <ng-template pTemplate="header">
+                    <div class="header-skill">
+                        <!-- <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" /> -->
+                        <div class="icon-header">
+                            <i [class]="skill.icon"></i>
+                        </div>
+                    </div>
+
+                </ng-template>
+                <p>
+                    {{skill.description}}
+                </p>
+            </p-card>
+        </div>
+    </div>
+</div>
