@@ -1,5 +1,5 @@
 <app-landing></app-landing>
-<div class="home-container">
+<div class="home-container" id="about">
     <section>
         <picture>
             <img src="https://www.lokkeestudios.com/_astro/lokkee.c5c1cf05.webp" alt="Santiago gauna">
@@ -72,7 +72,7 @@
         </div>
     </div>
 </div>
-<div class="contact-me">
+<div class="contact-me" id="contactme">
     <div class="section-left">
         <span class="subtitle">
             CONTACT
@@ -85,17 +85,14 @@
             <div class="input-form">
                 <label for="username">EMAIL</label>
                 <input pInputText id="username" placeholder="example@gmail.com" aria-describedby="username-help" formControlName="email" />
-                <!-- <small id="username-help">Enter your username to reset your password.</small> -->
             </div>
             <div class="input-form">
                 <label for="username">NAME</label>
                 <input pInputText id="username" placeholder="Example Name" aria-describedby="username-help" formControlName="name" />
-                <!-- <small id="username-help">Enter your username to reset your password.</small> -->
             </div>
             <div class="input-form">
                 <label for="username">MESSAGE</label>
                 <textarea rows="5" cols="30" placeholder="Example Message" pInputTextarea formControlName="textarea"></textarea>
-                <!-- <small id="username-help">Enter your username to reset your password.</small> -->
             </div>
             <div class="footer-form">
                 <div class="gmail-form">

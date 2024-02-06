@@ -13,5 +13,7 @@ import { CommonModule } from '@angular/common';
 
 export class SkillsComponent {
   skills = AllSkilssData;
-
+  // jest test unitarios
+  // REDUX
+  //AWS Amazon Web Services
 }

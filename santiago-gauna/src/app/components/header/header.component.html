@@ -1,32 +1,24 @@
 <nav class="navbar navbar-expand-lg nav-sg">
     <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="works">WORKS</a>
-                </li>
-                <li class="nav-item">
+        <div class="collapse navbar-collapse">
+            <div class="row" id="mainNavbar">
+                <div class="col-3 col-nav col-links">
+                    <a class="nav-link" aria-current="page" href="home#about">ABOUT</a>
                     <a class="nav-link" href="skills">SKILLS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT ME</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
+                    <a class="nav-link" href="works">WORKS</a>
+                    <a class="nav-link" href="home#contactme">CONTACT ME</a>
+                </div>
+                <div class="col-6 col-nav col-name">
                     <a class="nav-link" aria-current="page" href="#">SANTIAGO GAUNA</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav">
-                <button type="button" class="btn btn-primary">IDONTKNOW</button>
-            </ul>
+                </div>
+                <div class="col-3 col-nav col-button">
+                    <button type="button" class="btn btn-primary">IDONTKNOW</button>
+                </div>
+            </div>
         </div>
     </div>
 </nav>
