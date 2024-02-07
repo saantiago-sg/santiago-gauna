@@ -2,7 +2,7 @@
 <div class="home-container" id="about">
     <section>
         <picture>
-            <img src="https://www.lokkeestudios.com/_astro/lokkee.c5c1cf05.webp" alt="Santiago gauna">
+            <img src="https://www.lokkeestudios.com/_astro/lokkee.HJ81Vjva.webp" alt="Santiago gauna">
         </picture>
         <div class="about-container">
             <span class="subtitle">
@@ -37,14 +37,14 @@
                                     <img alt="Card" [src]="product.image" [alt]="product.name" />
                                 </ng-template>
                                 <ng-template pTemplate="footer">
-                                    <p-button label="Save" icon="pi pi-search"></p-button>
+                                    <p-button class="button-general" label="Save" icon="pi pi-search"></p-button>
                                 </ng-template>
                             </p-card>
                         </div>
                     </ng-template>
                 </p-carousel>
             </div>
-            <p-button label="Show more" icon="pi pi-search"></p-button>
+            <p-button class="button-general" label="Show more" icon="pi pi-search"></p-button>
         </div>
     </div>
 </div>
@@ -99,7 +99,7 @@
                     <i class="fa-solid fa-envelope"></i>
                     <span>saantiagosg gmail.com</span>
                 </div>
-                <p-button label="Submit" icon="pi pi-send" iconPos="right" [loading]="loading"
+                <p-button label="Submit" class="button-general" icon="pi pi-send" iconPos="right" [loading]="loading"
                 (onClick)="submitForm(validateForm.valid, validateForm.value)"
                 ></p-button>
             </div>
