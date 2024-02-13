@@ -12,6 +12,9 @@
             <div class="title">
                 <span>{{work.title}}</span>
             </div>
+            <div class="image-work">
+                <img  [src]="work.image" [alt]="work.title" />
+            </div>
             <div class="description">
                 <span>{{work.description}}</span>
             </div>
@@ -19,7 +22,7 @@
             <div class="link-to-web">
                 <a [href]="work.link" target="_blank">
 
-                    <p-button label="View project" icon="pi pi-send" iconPos="right"></p-button>
+                    <p-button class="btn-work" label="View project" icon="pi pi-send" iconPos="right"></p-button>
                 </a>
             </div>
         </div>

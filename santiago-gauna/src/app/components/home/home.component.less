@@ -117,10 +117,18 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 3%;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.skills-cards .skill-card {
+    width: 30%;
+}
+
+.button-skill {
+    margin-top: 40px;
 }
 
 .header-skill {
@@ -131,21 +139,25 @@
     background-size: cover;
     height: 200px;
     border-radius: 5px 5px 0px 0px;
-    i{
+
+    i {
         font-size: 60px;
         color: white;
     }
 }
-:host ::ng-deep .skills-container .p-card-body{
+
+:host ::ng-deep .skills-container .p-card-body {
     background-color: #0f142d;
     color: white;
     border-radius: 0px 0px 5px 5px;
 }
-:host ::ng-deep .p-card-title{
+
+:host ::ng-deep .p-card-title {
     font-size: 2.25rem;
     line-height: 2.5rem;
     text-transform: uppercase;
 }
+
 // .icon-header{
 //     margin-top: -80px;
 //     i{
@@ -154,7 +166,7 @@
 //     }
 // }
 
-.contact-me{
+.contact-me {
     display: flex;
     padding: 100px 50px;
     // align-items: center;
@@ -164,28 +176,122 @@
     color: white;
     border-bottom: 1px solid #2e364f;
 }
-.section-right, .section-left{
+
+.section-right,
+.section-left {
     width: 45%;
 }
-.input-form{
+
+.input-form {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
-    label, input, textarea {
+
+    label,
+    input,
+    textarea {
         width: 100%;
     }
-    textarea{
+
+    textarea {
         padding: 12px;
         border-radius: 5px;
     }
 }
-.footer-form{
+
+.footer-form {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .gmail-form{
+
+    .gmail-form {
         display: flex;
         align-items: center;
         gap: 10px;
     }
+}
+
+
+// mobile
+@media only screen and (max-width: 767px) {
+.home-container {
+    section {
+       flex-wrap: wrap;
+    }
+
+    picture {
+        width: 100%;
+    }
+    img {
+        width: 60%;
+    }
+    .about-container{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.work-container{
+    padding: 50px 0px;
+}
+
+.skills-container{
+    padding: 50px 0px;
+
+    .skills-cards{
+        flex-wrap: wrap;
+        gap: 0px;
+        .skill-card{
+            width: 95%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.contact-me{
+    flex-wrap: wrap;
+    gap: 0px;
+    padding: 50px 0px;
+    justify-content: center;
+    .section-left, .section-right{
+        width: 95%;
+        margin-bottom: 20px;
+    }
+}
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .home-container {
+        img {
+            width: 80%;
+        }
+    }
+    
+    .work-container{
+        padding: 50px 0px;
+    }
+    
+    .skills-container{
+        padding: 50px 0px;
+    
+        .skills-cards{
+            flex-wrap: wrap;
+            gap: 0px;
+            .skill-card{
+                width: 70%;
+                margin-left: 15%;
+                margin-right: 15%;
+                margin-bottom: 50px;
+            }
+        }
+        .button-skill{
+            margin-top: 0px;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* Estilos para escritorios */
 }

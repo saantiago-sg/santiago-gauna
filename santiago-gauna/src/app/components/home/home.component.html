@@ -57,7 +57,7 @@
     <h1>That are my skills</h1>
     <div class="skills-cards">
         <div class="skill-card" *ngFor="let skill of skills">
-            <p-card [header]="skill.name" [style]="{ width: '360px', borderRadius: '10px' }">
+            <p-card [header]="skill.name">
                 <ng-template pTemplate="header">
                     <div class="header-skill">
                         <!-- <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" /> -->
@@ -72,7 +72,7 @@
                 </p>
             </p-card>
         </div>
-        <a href="skills">
+        <a href="skills" class="button-skill">
             <p-button class="button-general" label="Show more" icon="pi pi-search"></p-button>
         </a>
     </div>

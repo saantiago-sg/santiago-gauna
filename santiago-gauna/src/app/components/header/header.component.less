@@ -26,3 +26,61 @@ a{
 .col-button{
     justify-content: right;
 }
+
+// mobile
+@media only screen and (max-width: 767px) {
+    .nav-sg{
+        background-color: #060918b8;
+        margin: 0px;
+        border-radius: 0px;
+        a{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .col-name, .col-links, .col-button{
+        width: 100%;
+    }
+    .col-links{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .col-button{
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .btn-toggle{
+        background-color: #8277b4;
+    }
+}
+
+// tablet
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .nav-sg{
+        background-color: #060918b8;
+        margin: 0px;
+        border-radius: 0px;
+        a{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .col-name, .col-links, .col-button{
+        width: 100%;
+    }
+    .col-links{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .col-button{
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .btn-toggle{
+        background-color: #8277b4;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* Estilos para escritorios */
+}
