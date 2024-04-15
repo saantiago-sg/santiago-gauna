@@ -32,8 +32,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.validateForm = this.fb.group({
       name: [null, [Validators.required]],
-      email: [null, [Validators.required]],
-      textarea: [null, [Validators.required]],
+      email: [null, [Validators.required, Validators.email]],
+      message: [null, [Validators.required]],
     });
 
 
