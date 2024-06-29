@@ -1,46 +1,16 @@
-<!-- <div class="works-container">
-    <div class="header-subtitle">
-        <span class="subtitle">
-            WORKS
-        </span>
-    </div>
-    <div class="work-card" *ngFor="let work of works">
-        <div class="card-extended">
-            <div class="date">
-                <span>{{work.date}}</span>
-            </div>
-            <div class="title">
-                <span>{{work.title}}</span>
-            </div>
-            <div class="image-work">
-                <img  [src]="work.image" [alt]="work.title" />
-            </div>
-            <div class="description">
-                <span>{{work.description}}</span>
-            </div>
-            <hr>
-            <div class="link-to-web">
-                <a [href]="work.link" target="_blank">
-
-                    <p-button class="btn-work" label="View project" icon="pi pi-send" iconPos="right"></p-button>
-                </a>
-            </div>
-        </div>
-    </div>
-</div> -->
 <div class="skills-container">
     <div class="header-subtitle">
         <span class="subtitle">
-            SKILLS
+            PROJECTS
         </span>
     </div>
     <div class="container-cards">
         <div class="skill-card" *ngFor="let work of works">
             <p-card [header]="work.title" [style]="{ width: '360px', borderRadius: '10px' }">
                 <ng-template pTemplate="header">
-                    <div class="header-skill" >
+                    <div class="header-skill">
                         <div class="image-work">
-                            <img  [src]="work.image" [alt]="work.title" />
+                            <img [src]="work.image" [alt]="work.title" />
                         </div>
                     </div>
 
