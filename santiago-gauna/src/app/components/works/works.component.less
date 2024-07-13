@@ -1,110 +1,15 @@
-/*
-.works-container {
-    background-color: #060918;
-    border-top: 1px solid rgb(46, 54, 79);
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.container-cards{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-}
-
-.header-work {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../../../assets/images/back3.jpg");
-    background-size: cover;
-    height: 200px;
-    border-radius: 5px 5px 0px 0px;
-    i{
-        font-size: 60px;
-        color: white;
-    }
-}
-:host ::ng-deep .works-container .p-card-body{
-    background-color: #0f142d;
-    color: white;
-    border-radius: 0px 0px 5px 5px;
-    text-align: center;
-}
-:host ::ng-deep .p-card-title{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-    text-transform: uppercase;
-}
-.header-subtitle{
-    display: flex;
-    justify-content: center;
-    margin-top: 20vh;
-    margin-bottom: 20px;
-}
-
-.card-extended{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    padding: 25px 30px;
-    border-radius: 5px;
-    background: #311c67;
-    border-radius: 5px;
-    color: white;
-    -webkit-box-shadow: 1px 10px 25px -6px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 10px 25px -6px rgba(0,0,0,0.75);
-    box-shadow: 1px 10px 25px -6px rgba(0,0,0,0.75);
-    .date{
-        font-size: .875rem;
-        line-height: 1.25rem;
-        text-transform: uppercase;
-        margin-bottom: 1rem;
-    }
-    .title{
-        font-size: 3.75rem;
-        line-height: 1;
-        font-weight: 700;
-        margin-bottom: 1rem;
-    }
-    .description{
-        font-size: 1rem;
-        line-height: 1.625;
-        margin-bottom: 2rem;
-    }
-}
-.image-work img{
-    width: 100%;
-    border-radius: 10px;
-    // width: 713px;
-    // height: 400px;
-    filter: brightness(0.5);
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, .25);
-    border-radius: 10px;
-    margin-bottom: 10px;
-    transition: ease .3s;
-}
-.image-work img:hover{
-    filter: none;
-    transition: ease .3s;
-}
-
 // mobile
 @media only screen and (max-width: 767px) {
-    .card-extended{
+    .card-extended {
         width: 90%;
+    }
+    .header-subtitle{
+        margin-top: 12vh!important;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
 
-}*/
 .skills-container {
     background-color: #060918;
     border-top: 1px solid rgb(46, 54, 79);
@@ -112,7 +17,7 @@
     padding-bottom: 100px;
 }
 
-.container-cards{
+.container-cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -131,23 +36,28 @@
     background-size: cover;
     height: 200px;
     border-radius: 5px 5px 0px 0px;
-    i{
+
+    i {
         font-size: 60px;
         color: white;
     }
 }
-:host ::ng-deep .skills-container .p-card-body{
+
+:host ::ng-deep .skills-container .p-card-body {
     background-color: #0f142d;
     color: white;
     border-radius: 0px 0px 5px 5px;
     text-align: center;
 }
-:host ::ng-deep .p-card-title{
+
+:host ::ng-deep .p-card-title {
     font-size: 2.25rem;
     line-height: 2.5rem;
     text-transform: uppercase;
+    height: 70px;
 }
-.header-subtitle{
+
+.header-subtitle {
     display: flex;
     justify-content: center;
     margin-top: 20vh;
