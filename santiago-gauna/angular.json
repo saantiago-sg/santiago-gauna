@@ -108,6 +108,12 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://saantiago-sg.github.io/santiago-gauna/"
+          }
         }
       }
     }
