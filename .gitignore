@@ -1,18 +1,34 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# Angular build output
+/dist/
+/out-tsc/
+/build/
+/dist-out-tsc/
 
-# Other files and folders
-.settings/
+/coverage/  # Output de las pruebas de cobertura
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# Temporary files
+/.angular/
+/.vscode/
+/.idea/
+/tmp/
+/temp/
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Dependency directories
+node_modules/
+
+# Angular Cache
+.angular/cache/
+
+# IDE files
+/.vscode/
+/.idea/
+/*.sublime-project
+/*.sublime-workspace
+
+# MacOS system files
+.DS_Store
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
