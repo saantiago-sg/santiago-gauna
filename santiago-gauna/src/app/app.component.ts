@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import * as AOS from 'aos'
 
 @Component({
   selector: 'app-root',
@@ -24,5 +25,12 @@ import { HttpClientModule } from '@angular/common/http';
 })
 
 export class AppComponent {
+
+  ngOnInit(){
+    if (typeof document !== 'undefined') {
+      AOS.init();
+    }
+  }
+
   title = 'santiago-gauna';
 }

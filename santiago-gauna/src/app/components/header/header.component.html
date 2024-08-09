@@ -14,7 +14,14 @@
             <a class="nav-link" aria-current="page" href="#">SANTIAGO GAUNA</a>
         </div>
         <div class="col-3 col-nav col-button">
-          <a class="nav-link" aria-current="page" href="#">DOWNLOAD CV</a>
+          <p-button 
+            class="download-button"
+            label="DOWNLOAD CV"
+            icon="pi pi-arrow-circle-down" 
+            [raised]="true"
+            [loading]="loading" 
+            (onClick)="download()"
+          />
         </div>
       </div>
     </div>
