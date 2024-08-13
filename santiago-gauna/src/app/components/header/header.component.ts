@@ -24,9 +24,11 @@ export class HeaderComponent {
 
   download(){
     this.loading = true;
-    setTimeout(() => {
-        this.loading = false
-    }, 2000);  
+ 
+  // Reemplaza 'url-a-tu-pdf.pdf' con la URL de tu PDF
+  const pdfUrl = 'assets/pdfs/CV-SANTIAGO-GAUNA-2024.pdf';
+  window.open(pdfUrl, '_blank');
+  this.loading = false;
   }
 
 }
