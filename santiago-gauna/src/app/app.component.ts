@@ -28,7 +28,9 @@ export class AppComponent {
 
   ngOnInit(){
     if (typeof document !== 'undefined') {
-      AOS.init();
+      AOS.init({
+        once: true,
+      });
     }
   }
 

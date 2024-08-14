@@ -1,7 +1,7 @@
 <app-landing></app-landing>
 <div class="home-container" id="about">
     <section>
-        <picture data-aos="zoom-in" data-aos-duration="3000">
+        <picture data-aos="zoom-in" data-aos-duration="2000">
             <img src="../../../assets/images/profile-pic (4).png" alt="Santiago gauna">
         </picture>
         <div class="about-container">
@@ -22,13 +22,13 @@
     </section>
 </div>
 
-<div class="work-container">
+<div class="work-container" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
     <div class="mrb-2">
         <span class="subtitle">
             PROJECTS
         </span>
     </div>
-    <h1>Dig into my universe</h1>
+    <h1>Some of my projects</h1>
     <div class="row justify-content-center">
         <div class="col-12 col-md-10">
             <div>
@@ -54,15 +54,14 @@
         </div>
     </div>
 </div>
-<div class="skills-container">
+<div class="skills-container" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
     <div class="mrb-2">
         <span class="subtitle">
             SKILLS
         </span>
     </div>
     <h1>That are my skills</h1>
-    <div class="skills-cards"  data-aos="fade-up"
-    data-aos-anchor-placement="center-center" data-aos-duration="3000">
+    <div class="skills-cards">
         <div class="skill-card" *ngFor="let skill of skills">
             <p-card [header]="skill.name">
                 <ng-template pTemplate="header">
@@ -133,4 +132,4 @@
         </form>
     </div>
 </div>
-<p-toast position="top-center"  [baseZIndex]="999999999"></p-toast>
+<p-toast position="top-center" [baseZIndex]="999999999"></p-toast>

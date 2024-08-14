@@ -22,13 +22,11 @@ export class HeaderComponent {
     }
   }
 
-  download(){
+  download() {
     this.loading = true;
- 
-  // Reemplaza 'url-a-tu-pdf.pdf' con la URL de tu PDF
-  const pdfUrl = 'assets/pdfs/CV-SANTIAGO-GAUNA-2024.pdf';
-  window.open(pdfUrl, '_blank');
-  this.loading = false;
+    const pdfUrl = 'assets/pdfs/CV-SANTIAGO-GAUNA-2024.pdf';
+    window.open(pdfUrl, '_blank');
+    this.loading = false;
   }
 
 }
