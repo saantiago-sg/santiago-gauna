@@ -1,6 +1,7 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
+
 @font-face {
     font-family: 'Titillium_Web';
     src: url('assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf') format('truetype');
@@ -12,17 +13,18 @@ html,
 p {
     font-family: 'Titillium_Web';
 }
-html{
+
+html {
     overflow-x: hidden;
     width: 100vw;
-    
+
 }
-body{
-    background: rgb(6, 9, 24)!important;
+
+body {
+    background: rgb(6, 9, 24) !important;
 }
 
 ////
-
 h1 {
     font-size: 48px;
     margin: 1rem 0px;
@@ -38,19 +40,22 @@ h1 {
     border-width: 0.5px;
     padding: 4px 16px;
 }
-.button-general button{
+
+.button-general button {
     background: #6919ff1a;
     border-radius: 20px;
     color: white;
     border-color: #6919ff4d;
     transition: ease .3s;
 }
-.button-general button:hover{
+
+.button-general button:hover {
     background: #6919ff42;
     border-color: #ffffff;
     transition: ease .3s;
 }
-.btn-work button{
+
+.btn-work button {
     background: #6919ff;
     border-radius: 20px;
     color: white;
@@ -58,10 +63,76 @@ h1 {
     transition: ease .3s;
     padding: 10px 20px;
 }
+
 // helpers
-.mrb-1{
-    margin-bottom: 10px!important;
+.mrb-1 {
+    margin-bottom: 10px !important;
 }
-.mrb-2{
-    margin-bottom: 20px!important;
+
+.mrb-2 {
+    margin-bottom: 20px !important;
+}
+
+// work and skill
+.skills-container {
+    border-top: 1px solid rgb(46, 54, 79);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1500' height='1400' preserveAspectRatio='none' viewBox='0 0 1500 600'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1055%26quot%3b)' fill='none'%3e%3crect width='1500' height='1400' x='0' y='0' fill='rgba(6%2c 9%2c 24%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c503.71C96.09%2c487.16%2c187.324%2c468.999%2c277.37%2c431.596C385.44%2c386.707%2c506.104%2c356.42%2c577.612%2c263.787C656.323%2c161.823%2c717.774%2c26.28%2c686.762%2c-98.741C655.963%2c-222.902%2c520.423%2c-284.099%2c421.566%2c-365.289C339.022%2c-433.081%2c252.588%2c-486.741%2c156.796%2c-533.997C41.154%2c-591.045%2c-72.238%2c-703.57%2c-196.835%2c-670.357C-321.083%2c-637.238%2c-354.469%2c-477.134%2c-434.398%2c-376.408C-510.065%2c-281.053%2c-648.724%2c-215.66%2c-654.148%2c-94.052C-659.616%2c28.554%2c-514.221%2c99.955%2c-460.567%2c210.334C-408.813%2c316.805%2c-446.261%2c475.43%2c-346.414%2c539.031C-246.494%2c602.679%2c-116.751%2c523.818%2c0%2c503.71' fill='%23050713'%3e%3c/path%3e%3cpath d='M1500 1190.016C1611.027 1182.7150000000001 1707.1 1126.521 1807.343 1078.234 1921.959 1023.024 2065.697 997.635 2128.758 887.144 2192.514 775.436 2154.31 635.809 2132.165 509.108 2110.603 385.73900000000003 2097.11 246.632 2002.472 164.60500000000002 1909.767 84.25300000000004 1771.622 102.697 1649.521 90.77999999999997 1549.241 80.99300000000005 1453.527 88.68400000000003 1353.561 101.274 1233.806 116.356 1091.651 86.91899999999998 1005.88 171.84300000000002 920.232 256.645 939.836 398.08500000000004 932.298 518.377 925.318 629.769 923.386 740.844 963.703 844.918 1005.678 953.271 1067.817 1057.562 1165.533 1120.441 1263.275 1183.337 1384.021 1197.643 1500 1190.016' fill='%23070b1d'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1055'%3e%3crect width='1500' height='1400' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+}
+
+.header-subtitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+    margin-bottom: 20px;
+}
+
+.header-skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border-radius: 5px 5px 0px 0px;
+
+    i {
+        font-size: 60px;
+        color: white;
+    }
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.skills-container .p-card-body {
+    background-color: #0f142d !important;
+    color: white;
+    border-radius: 0px 0px 5px 5px;
+    text-align: center;
+}
+
+.p-card-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+}
+
+// mobile
+@media only screen and (max-width: 767px) {
+    .header-subtitle {
+        margin-top: 12vh !important;
+    }
+
+    .skills-container {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='600' height='1400' preserveAspectRatio='none' viewBox='0 0 600 1400'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1069%26quot%3b)' fill='none'%3e%3crect width='600' height='1400' x='0' y='0' fill='rgba(6%2c 9%2c 24%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c555.468C101.997%2c565.81%2c197.223%2c489.964%2c266.051%2c413.983C327.041%2c346.654%2c317.21%2c244.729%2c355.93%2c162.548C395.331%2c78.921%2c493.226%2c21.32%2c494.608%2c-71.114C496.016%2c-165.258%2c418.987%2c-238.848%2c363.065%2c-314.597C302.614%2c-396.481%2c252.276%2c-498.129%2c155.683%2c-530.209C58.456%2c-562.499%2c-43.715%2c-512.48%2c-141.586%2c-482.198C-238.077%2c-452.343%2c-341.906%2c-429.868%2c-409.93%2c-355.206C-478.638%2c-279.793%2c-516.393%2c-175.831%2c-513.631%2c-73.849C-511.047%2c21.566%2c-446.916%2c100.215%2c-395.42%2c180.582C-350.603%2c250.525%2c-293.784%2c306.18%2c-233.5%2c363.333C-158.841%2c434.115%2c-102.354%2c545.09%2c0%2c555.468' fill='%23050713'%3e%3c/path%3e%3cpath d='M600 1733.98C668.996 1747.354 754.205 1768.114 806.148 1720.772 859.633 1672.025 818.044 1578.991 844.119 1511.485 867.78 1450.229 949.4970000000001 1415.422 949.46 1349.755 949.423 1284.226 884.087 1240.416 843.935 1188.629 801.244 1133.568 770.61 1064.366 706.691 1036.644 640.079 1007.754 558.374 1004.383 493.281 1036.548 430.61199999999997 1067.516 414.533 1146.934 371.7 1202.177 331.884 1253.529 259.709 1285.426 250.445 1349.742 241.18099999999998 1414.059 290.474 1470.56 325.125 1525.531 355.756 1574.126 393.755 1614.995 439.525 1649.705 488.663 1686.968 539.458 1722.2440000000001 600 1733.98' fill='%23070b1d'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1069'%3e%3crect width='600' height='1400' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    }
 }
