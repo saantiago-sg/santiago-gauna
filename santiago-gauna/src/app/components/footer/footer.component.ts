@@ -10,6 +10,7 @@ import { ButtonModule } from 'primeng/button';
 })
 export class FooterComponent implements OnInit{
   year: number |null = null;
+  loading: boolean = false;
 
   ngOnInit(): void {
     this.getCurrentYear();
@@ -18,5 +19,12 @@ export class FooterComponent implements OnInit{
   getCurrentYear(){
     const currentDate = new Date();
     this.year = currentDate.getFullYear();
+  }
+
+  download() {
+    this.loading = true;
+    const pdfUrl = 'assets/pdfs/CV-SANTIAGO-GAUNA-2024.pdf';
+    window.open(pdfUrl, '_blank');
+    this.loading = false;
   }
 }

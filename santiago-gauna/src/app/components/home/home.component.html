@@ -1,60 +1,61 @@
 <app-landing></app-landing>
 <div class="background-effect">
-<div class="home-container" id="about">
-    <section>
-        <picture data-aos="zoom-in" data-aos-duration="2000">
-            <img src="../../../assets/images/profile-pic (4).png" alt="Santiago gauna">
-        </picture>
-        <div class="about-container">
-            <div class="mrb-2">
-                <span class="subtitle">
-                    ABOUT
-                </span>
+    <div class="home-container" id="about">
+        <section>
+            <picture data-aos="zoom-in" data-aos-duration="2000">
+                <img src="../../../assets/images/profile-pic (4).png" alt="Santiago gauna">
+            </picture>
+            <div class="about-container">
+                <div class="mrb-2">
+                    <span class="subtitle">
+                        ABOUT
+                    </span>
+                </div>
+                <h1>Frontend Developer</h1>
+                <p class="text">
+                    I am Santiago, frontend developer and programming enthusiast, born in Tandil, Argentina.
+                    With several years of experience in the market, I have perfected my skills in the design and
+                    development of interfaces, always prioritizing usability and aesthetics. Throughout my career, I
+                    have led and collaborated on diverse projects, implementing agile methodologies that allow efficient
+                    and high-quality delivery. My passion for technology and design drives me to create innovative
+                    solutions that not only meet customer requirements but also provide an exceptional user experience.
+                </p>
             </div>
-            <h1>Frontend Developer</h1>
-            <p class="text">
-                I am Santiago, a passionate freelancer from Tandil, Argentina and the founder of IMAGINATION COMPANY,
-                bringing you
-                <span class="text-neutrals-100">web development and design from the future</span>. My
-                expertise is developing next-level websites and web applications including full frontend
-                design.
-            </p>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
 
-<div class="work-container" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
-    <div class="mrb-2">
-        <span class="subtitle">
-            PROJECTS
-        </span>
-    </div>
-    <h1>Some of my projects</h1>
-    <div class="row justify-content-center">
-        <div class="col-12 col-md-10">
-            <div>
-                <p-carousel [value]="data" [numVisible]="3" [numScroll]="1" [circular]="true"
-                    [responsiveOptions]="responsiveOptions">
-                    <ng-template let-product pTemplate="item">
-                        <div class="card card-page">
-                            <p-card [header]="product.name" [subheader]="product.description">
-                                <ng-template pTemplate="header">
-                                    <img alt="Card" [src]="product.image" [alt]="product.name" />
-                                </ng-template>
-                                <ng-template pTemplate="footer">
-                                    <p-button class="btn-work" label="VIEW" icon="pi pi-search"></p-button>
-                                </ng-template>
-                            </p-card>
-                        </div>
-                    </ng-template>
-                </p-carousel>
+    <div class="work-container" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
+        <div class="mrb-2">
+            <span class="subtitle">
+                PROJECTS
+            </span>
+        </div>
+        <h1>Some of my projects</h1>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <div>
+                    <p-carousel [value]="data" [numVisible]="3" [numScroll]="1" [circular]="true"
+                        [responsiveOptions]="responsiveOptions">
+                        <ng-template let-product pTemplate="item">
+                            <div class="card card-page">
+                                <p-card [header]="product.name" [subheader]="product.description">
+                                    <ng-template pTemplate="header">
+                                        <img alt="Card" [src]="product.image" [alt]="product.name" />
+                                    </ng-template>
+                                    <ng-template pTemplate="footer">
+                                        <p-button class="btn-work" label="VIEW" icon="pi pi-search" (click)="navigateToProject(product.link)"></p-button>
+                                    </ng-template>
+                                </p-card>
+                            </div>
+                        </ng-template>
+                    </p-carousel>
+                </div>
+                <a href="works">
+                    <p-button class="button-general" label="Show more" icon="pi pi-search"></p-button>
+                </a>
             </div>
-            <a href="works">
-                <p-button class="button-general" label="Show more" icon="pi pi-search"></p-button>
-            </a>
         </div>
     </div>
-</div>
 </div>
 <div class="skills-container" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
     <div class="mrb-2">
@@ -92,7 +93,7 @@
             </span>
         </div>
         <h1>You can send me a message</h1>
-        <p>Get your space suit ready and tell me your ideas to develop your dream website.</p>
+        <p>to share ideas or talk about new challenges</p>
     </div>
     <div class="section-right">
         <form [formGroup]="validateForm" class="login-form">
@@ -126,7 +127,7 @@
             <div class="footer-form">
                 <div class="gmail-form">
                     <i class="fa-solid fa-envelope"></i>
-                    <span>saantiagosg gmail.com</span>
+                    <span>saantiagosg&#64;gmail.com</span>
                 </div>
                 <p-button label="Submit" class="button-general" icon="pi pi-send" iconPos="right" [loading]="loading"
                     (onClick)="submitForm(validateForm.valid, validateForm.value)"></p-button>

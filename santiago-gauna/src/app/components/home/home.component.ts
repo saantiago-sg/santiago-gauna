@@ -96,4 +96,8 @@ export class HomeComponent implements OnInit {
     }
     this.loading = false;
   }
+
+  navigateToProject(link: string){
+    window.open(link, '_blank');
+  }
 }
