@@ -40,17 +40,17 @@ export const worksData = [
 export const skillsData = [
     {
         name: "Angular",
-        description: "Framework para aplicaciones web desarrollado en TypeScript, de código abierto, mantenido por Google, que se utiliza para crear y mantener aplicaciones web de una sola página.",
+        description: "A web application framework developed in TypeScript, open-source, maintained by Google, used to create and maintain single-page web applications.",
         icon: "fa-brands fa-angular"
     },
     {
         name: "React",
-        description: "Biblioteca de JavaScript de código abierto utilizada para construir interfaces de usuario (UI) interactivas y reutilizables. Desarrollada y mantenida por Facebook.",
+        description: "An open-source JavaScript library used to build interactive and reusable user interfaces (UI). Developed and maintained by Facebook.",
         icon: "fa-brands fa-react"
     },
     {
         name: "Typescript",
-        description: "TypeScript es un lenguaje de programación de código abierto desarrollado por Microsoft, que es un superconjunto tipado de JavaScript.",
+        description: "TypeScript is an open-source programming language developed by Microsoft, which is a statically-typed superset of JavaScript.",
         icon: "fa-brands fa-js"
     },
 ];
@@ -58,98 +58,97 @@ export const skillsData = [
 export const AllSkilssData = [
     {
         name: "Angular",
-        description: "Framework para aplicaciones web desarrollado en TypeScript, de código abierto, mantenido por Google, que se utiliza para crear y mantener aplicaciones web de una sola página.",
+        description: "A web application framework developed in TypeScript, open-source, maintained by Google, used to create and maintain single-page web applications.",
         icon: "fa-brands fa-angular"
     },
     {
         name: "React",
-        description: "Biblioteca de JavaScript de código abierto utilizada para construir interfaces de usuario (UI) interactivas y reutilizables. Desarrollada y mantenida por Facebook.",
+        description: "An open-source JavaScript library used to build interactive and reusable user interfaces (UI). Developed and maintained by Facebook.",
         icon: "fa-brands fa-react"
     },
     {
         name: "Typescript",
-        description: "TypeScript es un lenguaje de programación de código abierto desarrollado por Microsoft, que es un superconjunto tipado de JavaScript.",
+        description: "TypeScript is an open-source programming language developed by Microsoft, which is a statically-typed superset of JavaScript.",
         icon: "fa-brands fa-js"
     },
     {
         name: "Wordpress",
-        description: "WordPress es un sistema de gestión de contenidos de código abierto, que se utiliza principalmente para crear y gestionar sitios web y blogs.",
+        description: "WordPress is an open-source content management system, primarily used to create and manage websites and blogs.",
         icon: "fa-brands fa-wordpress"
     },
     {
         name: "Github",
-        description: "GitHub es una plataforma de desarrollo colaborativo y control de versiones basada en la web que utiliza Git, un sistema de control de versiones distribuido.",
+        description: "GitHub is a web-based collaborative development platform and version control system that uses Git, a distributed version control system.",
         icon: "fa-brands fa-github"
     },
     {
         name: "Less",
-        description: "LESS es un preprocesador de CSS que extiende las capacidades del lenguaje CSS mediante la adición de características como variables, anidación, mixins, y funciones.",
+        description: "LESS is a CSS preprocessor that extends the capabilities of the CSS language by adding features such as variables, nesting, mixins, and functions.",
         icon: "fa-brands fa-less"
     },
     {
         name: "Css",
-        description: "CSS es un lenguaje de diseño utilizado para describir la presentación de un documento escrito en HTML o XML.",
+        description: "CSS is a style sheet language used to describe the presentation of a document written in HTML or XML.",
         icon: "fa-brands fa-css3"
     },
     {
         name: "Html",
-        description: "HTML es el lenguaje estándar de marcado utilizado para crear y estructurar contenido en la web. ",
+        description: "HTML is the standard markup language used to create and structure content on the web.",
         icon: "fa-brands fa-html5"
     },
     {
         name: "Node.js",
-        description: "Node.js es un entorno de ejecución de JavaScript de código abierto, que permite a los desarrolladores ejecutar código JavaScript del lado del servidor.",
+        description: "Node.js is an open-source JavaScript runtime environment that allows developers to run JavaScript code on the server-side.",
         icon: "fa-brands fa-node"
     },
 ];
 
-
 export const AllWorksData = [
     {
         title: "Casas en Tandil",
-        description: "Sitio web desarrollado con wordpress basado en la publicación y venta de propiedades.",
+        description: "Website developed with WordPress focused on property listings and sales.",
         date: "January 2023",
         link: "https://casasentandil.com.ar/",
         image: "../../assets/images/casasentandil.png",
     },
     {
-        title: "Lavadero reynoso",
-        description: "Sitio web desarrollado con angular basado en la información de trabajo de un lavadero de autos.",
+        title: "Lavadero Reynoso",
+        description: "Website developed with Angular, focused on a car wash business's work information.",
         date: "November 2023",
         link: "https://lavadero-reynoso.netlify.app/home",
         image: "../../assets/images/lavadero.png",
     },
     {
         title: "Stormtech",
-        description: "Sitio web desarrollado con html, css y javascript para la presentación de compania de software",
+        description: "Website developed with HTML, CSS, and JavaScript for the presentation of a software company.",
         date: "August 2023",
         link: "https://stormtechlabs.com/",
         image: "../../assets/images/stormtech.png",
     },
     {
-        title: "Region global",
-        description: "Sitio web desarrollado con Wordpress para la presentación de compania de software",
+        title: "Region Global",
+        description: "Website developed with WordPress for the presentation of a software company.",
         date: "January 2022",
         link: "https://www.regionglobal.com/",
         image: "../../assets/images/regionglobal.png",
     },
     {
-        title: "Llano de la torre",
-        description: "Sitio web desarrollado con angular basado en la comercialización de materiales para una empresa de México.",
+        title: "Llano de la Torre",
+        description: "Website developed with Angular, focused on the commercialization of materials for a company in Mexico.",
         date: "January 2022",
         link: "https://www.llanodelatorre.com.mx/",
         image: "../../assets/images/llano.png",
     },
     {
-        title: "Spoiler five",
-        description: "Sitio web desarrollado con html, css, javascript como modo de practica para la universidad.",
+        title: "Spoiler Five",
+        description: "Website developed with HTML, CSS, and JavaScript as a practice project for university.",
         date: "December 2021",
         link: "https://eloymazza.github.io/spoiler-five/",
         image: "../../assets/images/spoilerfive.png",
     },
     {
         title: "Levis",
-        description: "Sitio web desarrollado con html, css, javascript como modo de practica para la universidad.",
+        description: "Website developed with HTML, CSS, and JavaScript as a practice project for university.",
         date: "September 2021",
         link: "https://saantiago-sg.github.io/TP-Levis/html/index.html",
         image: "../../assets/images/levis.png",
