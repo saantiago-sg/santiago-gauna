@@ -35,6 +35,12 @@ export const worksData = [
         link: "https://www.llanodelatorre.com.mx/",
         image: "../../assets/images/llano.png",
     },
+    {
+        name: "Alojamiento la Rueca",
+        description: "WORDPRESS",
+        link: "https://alojamientolarueca.com/landing/",
+        image: "../../assets/images/alojamientolarueca.png",
+    },
 ];
 
 export const skillsData = [
@@ -152,5 +158,12 @@ export const AllWorksData = [
         date: "September 2021",
         link: "https://saantiago-sg.github.io/TP-Levis/html/index.html",
         image: "../../assets/images/levis.png",
+    },
+    {
+        title: "Alojamiento la Rueca",
+        description: "Website developed with HTML, CSS, and JavaScript as a practice project for university.",
+        date: "August 2024",
+        link: "https://alojamientolarueca.com/landing/",
+        image: "../../assets/images/alojamientolarueca.png",
     },
 ];

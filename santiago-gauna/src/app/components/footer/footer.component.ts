@@ -23,7 +23,7 @@ export class FooterComponent implements OnInit{
 
   download() {
     this.loading = true;
-    const pdfUrl = 'assets/pdfs/CV-SANTIAGO-GAUNA-2024.pdf';
+    const pdfUrl = 'assets/pdfs/SANTIAGO-GAUNA-SPANISH.pdf';
     window.open(pdfUrl, '_blank');
     this.loading = false;
   }
